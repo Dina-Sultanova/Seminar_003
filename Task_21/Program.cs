@@ -5,18 +5,18 @@
 
 Console.WriteLine("Введите координаты первой точки");
 Console.WriteLine("X = ");
-double XA = Convert.ToInt32(Console.ReadLine());
+double XA = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Y = ");
-double YA = Convert.ToInt32(Console.ReadLine());
+double YA = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine("Введите координаты второй точки");
 Console.WriteLine("X = ");
-double XB = Convert.ToInt32(Console.ReadLine());
+double XB = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Y = ");
-double YB = Convert.ToInt32(Console.ReadLine());
+double YB = Convert.ToDouble(Console.ReadLine());
 
-double resX = Math.Pow(XB-XA, 2);
-double resY = Math.Pow(YB-YA, 2);
+double resX = Math.Pow(XB - XA, 2);
+double resY = Math.Pow(YB - YA, 2);
 double res = Math.Sqrt(resX + resY);
-Console.WriteLine($"Расстояние между двумя точками {res}");
 
+Console.WriteLine($"Расстояние между двумя точками {res:f2}");
